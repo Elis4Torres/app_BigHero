@@ -7,7 +7,6 @@ import android.view.WindowManager;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.example.bighero.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 

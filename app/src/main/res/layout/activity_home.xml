@@ -4,4 +4,57 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity"/>
+    tools:context=".HomeActivity">
+
+    <ImageButton
+        android:id="@+id/img_btn_home"
+        android:layout_width="125dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="#00FFFFFF"
+        android:onClick="Home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/img_btn_mais"
+        app:layout_constraintStart_toEndOf="@+id/img_btn_location"
+        app:srcCompat="@drawable/ic_home" />
+
+    <ImageButton
+        android:id="@+id/img_btn_location"
+        android:layout_width="125dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="#00FFFFFF"
+        android:onClick="Mapas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_location" />
+
+    <ImageButton
+        android:id="@+id/img_btn_mais"
+        android:layout_width="125dp"
+        android:layout_height="72dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="#00FFFFFF"
+        android:onClick="Mais"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_add" />
+
+    <ImageView
+        android:id="@+id/imgHero"
+        android:layout_width="302dp"
+        android:layout_height="459dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="200dp"
+        app:layout_constraintBottom_toTopOf="@+id/img_btn_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_btn_location"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/hero" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
