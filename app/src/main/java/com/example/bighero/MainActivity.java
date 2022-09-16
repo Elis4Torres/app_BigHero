@@ -7,10 +7,13 @@ import android.view.WindowManager;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.example.bighero.databinding.ActivityMainBinding;
+
 public class MainActivity extends AppCompatActivity {
 
     ProgressBar progressBar;
     TextView textView;
+
 
 
     @Override
@@ -28,10 +31,17 @@ public class MainActivity extends AppCompatActivity {
         progressBar.setScaleY(3f);
 
         progressAnimation();
+
     }
+
     public void progressAnimation(){
         ProgressBarAnimation anim = new ProgressBarAnimation(this, progressBar, textView, 0f, 100f);
         anim.setDuration(5000);
         progressBar.setAnimation(anim);
     }
+
+
+
+
+
 }
