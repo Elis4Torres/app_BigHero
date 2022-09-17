@@ -18,7 +18,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/img_btn_mais"
         app:layout_constraintStart_toEndOf="@+id/img_btn_location"
-        app:srcCompat="@drawable/ic_home_rose"/>
+        app:srcCompat="@drawable/ic_home_rose" />
 
     <ImageButton
         android:id="@+id/img_btn_location"
@@ -46,17 +46,17 @@
 
     <ImageView
         android:id="@+id/imgHero"
-        android:layout_width="302dp"
-        android:layout_height="459dp"
+        android:layout_width="248dp"
+        android:layout_height="418dp"
         android:layout_marginStart="-60dp"
-        android:layout_marginTop="250dp"
+        android:layout_marginTop="180dp"
         android:layout_marginEnd="280dp"
         app:layout_constraintBottom_toTopOf="@+id/img_btn_home"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintHorizontal_bias="0.532"
         app:layout_constraintStart_toEndOf="@+id/img_btn_location"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/hero" />
 
     <androidx.appcompat.widget.Toolbar
@@ -73,31 +73,15 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="332dp"
-        android:layout_height="296dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginEnd="140dp"
+        android:layout_width="268dp"
+        android:layout_height="244dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="150dp"
         app:layout_constraintBottom_toTopOf="@+id/imgHero"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imgHero"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/fala" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="55dp"
-        android:layout_marginTop="120dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="58dp"
-        android:text="BLA BLA BLA BLA"
-        android:textColor="#E8BDBD"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/imgHero"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/imageView3"
-        app:layout_constraintTop_toTopOf="@+id/imageView3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
