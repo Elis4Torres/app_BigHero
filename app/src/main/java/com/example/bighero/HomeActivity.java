@@ -9,6 +9,8 @@ import android.view.View;
 
 public class HomeActivity extends AppCompatActivity {
 
+    private View view;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +31,12 @@ public class HomeActivity extends AppCompatActivity {
         Intent mais = new Intent(this, MaisActivity.class);
         startActivity(mais);
     }
+
+    public void Trailer (View view){
+        Intent trailer = new Intent(this, TrailerActivity.class);
+        startActivity(trailer);
+    }
+
 
 
 }

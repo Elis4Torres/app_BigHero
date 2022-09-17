@@ -2,4 +2,14 @@
     <string name="app_name">BigHero</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="apresentacao">Eai! Nós somos Hero e Baymax\n de Operação Big Hero! \n Vamos nos conhecer melhor?</string>
+
+    <string name ="resumo">Você pode ver um resumo \n da nossa aventura. \nClique aqui!</string>
+
+    <string name="resumo_trailer">O grande robô inflável está sempre a\npostos para cuidar de Hiro Hamada.\n Quando algo devastador assola a \n cidade, o menino prodígio, seus \n amigos e o robô formam um grupo de \n heróis para combater o mal.</string>
+
+    <string name="spoiler">Ta tranquilo!\nAcabamos com todos...\nos spoilers!</string>
+
+
 </resources>

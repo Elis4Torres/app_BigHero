@@ -35,7 +35,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/img_btn_home"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/btn_trailer"
         app:srcCompat="@drawable/ic_location"
         tools:ignore="SpeakableTextPresentCheck" />
 
@@ -94,8 +94,7 @@
         android:layout_marginTop="-50dp"
         android:layout_marginEnd="80dp"
         android:layout_marginBottom="200dp"
-        android:text=" Eai! Nós somos Hero e Baymax\n de Operação Big Hero!\n
-Vamos nos conhecer melhor?\n"
+        android:text="@string/apresentacao"
         android:textColor="#E8BDBD"
         android:textSize="20dp"
         android:textStyle="bold"
@@ -112,7 +111,7 @@ Vamos nos conhecer melhor?\n"
         android:layout_marginStart="60dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="-50dp"
-        android:text="Você pode ver um resumo \nda nossa aventura. \nClique aqui!"
+        android:text="@string/resumo"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/imgHero"
@@ -121,14 +120,14 @@ Vamos nos conhecer melhor?\n"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_trailer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
-
         android:layout_marginTop="60dp"
         android:layout_marginBottom="160dp"
         android:backgroundTint="#E8BDBD"
+        android:onClick="Trailer"
         android:text="ASSISTIR"
         android:textSize="18dp"
         android:textStyle="bold"
