@@ -5,11 +5,14 @@
 
     <string name="apresentacao">Eai! Nós somos Hero e Baymax\n de Operação Big Hero! \n Vamos nos conhecer melhor?</string>
 
-    <string name ="resumo">Você pode ver um resumo \n da nossa aventura. \nClique aqui!</string>
+    <string name ="resumo">Você pode ver um resumo \nda nossa aventura. \nClique aqui!</string>
 
     <string name="resumo_trailer">O grande robô inflável está sempre a\npostos para cuidar de Hiro Hamada.\n Quando algo devastador assola a \n cidade, o menino prodígio, seus \n amigos e o robô formam um grupo de \n heróis para combater o mal.</string>
 
     <string name="spoiler">Ta tranquilo!\nAcabamos com todos...\nos spoilers!</string>
 
+    <string name="aprensetacao_gogo">Eai, sou a Go Go. \n Me formei em engenharia, mas prefiro \na sensação do vento batendo no rosto. \nQue tal uma corridinha?</string>
+
+    <string name="mapa">Abra o mapa, \nescolha seu destino, \ne bom trajeto! \nNos vemos lá!</string>
 
 </resources>
