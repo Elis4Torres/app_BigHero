@@ -20,4 +20,17 @@ public class LocationActivity extends AppCompatActivity {
         startActivity(voltar);
 
     }
+    public void Mapas(View view){
+        Intent local = new Intent(this, LocationActivity.class);
+        startActivity(local);
+    }
+    public void Home (View view){
+        Intent home = new Intent(this, HomeActivity.class);
+        startActivity(home);
+    }
+
+    public void Mais(View view){
+        Intent mais = new Intent(this, MaisActivity.class);
+        startActivity(mais);
+    }
 }

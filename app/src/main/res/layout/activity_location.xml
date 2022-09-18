@@ -10,29 +10,34 @@
         android:id="@+id/img_btn_back2"
         android:layout_width="198dp"
         android:layout_height="73dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="280dp"
-        android:layout_marginBottom="225dp"
+        android:layout_marginTop="-10dp"
         android:backgroundTint="#E8AA4F"
         android:onClick="Back"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tooldbar_wasabi2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_arrow_back" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tooldbar_wasabi2"
+        android:layout_width="310dp"
+        android:layout_height="57dp"
+        android:background="?attr/colorPrimary"
+        android:backgroundTint="#E8AA4F"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/img_btn_home2"
         android:layout_width="125dp"
         android:layout_height="72dp"
-        android:layout_marginTop="500dp"
         android:background="#00FFFFFF"
         android:onClick="Home"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/img_btn_mais2"
         app:layout_constraintStart_toEndOf="@+id/img_btn_location2"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar3"
-        app:layout_constraintVertical_bias="0.51"
         app:srcCompat="@drawable/ic_home"
         tools:ignore="SpeakableTextPresentCheck" />
 
@@ -40,7 +45,6 @@
         android:id="@+id/img_btn_location2"
         android:layout_width="125dp"
         android:layout_height="72dp"
-        android:layout_marginTop="500dp"
         android:layout_marginEnd="250dp"
         android:background="#fff"
         android:backgroundTint="#fff"
@@ -48,7 +52,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar3"
         app:srcCompat="@drawable/ic_location_orange"
         tools:ignore="SpeakableTextPresentCheck" />
 
@@ -56,7 +59,7 @@
         android:id="@+id/img_btn_mais2"
         android:layout_width="125dp"
         android:layout_height="72dp"
-        android:layout_marginTop="530dp"
+        android:layout_marginTop="130dp"
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="25dp"
         android:background="#00FFFFFF"
@@ -64,42 +67,26 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/img_btn_home2"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar3"
+        app:layout_constraintTop_toBottomOf="@+id/btn_mapa"
         app:srcCompat="@drawable/ic_add"
         tools:ignore="SpeakableTextPresentCheck" />
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar3"
-        android:layout_width="276dp"
-        android:layout_height="57dp"
-        android:layout_marginEnd="1dp"
-        android:background="?attr/colorPrimary"
-        android:backgroundTint="#E8AA4F"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="2dp" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="248dp"
         android:layout_height="327dp"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="230dp"
         android:layout_marginEnd="80dp"
         app:layout_constraintBottom_toTopOf="@+id/img_btn_home2"
         app:layout_constraintEnd_toStartOf="@+id/img_btn_mais2"
         app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar3"
-        app:layout_constraintVertical_bias="0.457"
         app:srcCompat="@drawable/tomago" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="75dp"
         android:layout_marginBottom="71dp"
         android:text="@string/aprensetacao_gogo"
         android:textColor="#C0535353"
@@ -107,8 +94,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar3" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView7"
@@ -129,13 +115,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="180dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginTop="200dp"
         android:backgroundTint="#E8AA4F"
         android:text="MAPA"
-        app:layout_constraintBottom_toTopOf="@+id/img_btn_mais2"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7"
-        app:layout_constraintVertical_bias="0.497" />
+        app:layout_constraintTop_toBottomOf="@+id/tooldbar_wasabi2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
