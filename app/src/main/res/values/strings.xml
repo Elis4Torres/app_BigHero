@@ -5,7 +5,7 @@
 
     <string name="apresentacao">Eai! Nós somos Hero e Baymax\n de Operação Big Hero! \n Vamos nos conhecer melhor?</string>
 
-    <string name ="resumo">Você pode ver um resumo \nda nossa aventura. \nClique aqui!</string>
+    <string name="resumo">Você pode ver um resumo \nda nossa aventura. \nClique aqui!</string>
 
     <string name="resumo_trailer">O grande robô inflável está sempre a\npostos para cuidar de Hiro Hamada.\n Quando algo devastador assola a \n cidade, o menino prodígio, seus \n amigos e o robô formam um grupo de \n heróis para combater o mal.</string>
 
@@ -15,10 +15,26 @@
 
     <string name="mapa">Abra o mapa, \nescolha seu destino, \ne bom trajeto! \nNos vemos lá!</string>
 
-    <string name="wasabi">Sou cauteloso e perfeccionista.\nAcho que isso é o necessário \npara usar lâminas da forma correta.</string>
+    <string name="wasabi_apresentacao">Sou cauteloso e perfeccionista.\nAcho que isso é o necessário \npara usar lâminas da forma correta.</string>
 
     <string name="receita">Que tal usar suas lâminas...\nem uma grande receita?</string>
 
     <string name="aviso">Tenha cuidado e lembre-se,\ncozinhar é uma arte para perfeccionistas!</string>
+
+
+    ////////////////////////////
+
+    <string name="hiro">HIRO HAMADA</string>
+    <string name="baymax">BAYMAX</string>
+    <string name="fred">FRED</string>
+    <string name="tomago">GOGO TOMAGO</string>
+    <string name="wasabi">WASABI</string>
+    <string name="homey">HOMEY LEMON</string>
+    <string name="persongens">PERSONAGENS</string>
+    
+    
+    
+    
+    
 
 </resources>

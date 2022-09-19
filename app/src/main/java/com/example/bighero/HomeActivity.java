@@ -36,6 +36,10 @@ public class HomeActivity extends AppCompatActivity {
         Intent trailer = new Intent(this, TrailerActivity.class);
         startActivity(trailer);
     }
+    public void Personagem (View view){
+        Intent personagens = new Intent(this, PersonagensActivity.class);
+        startActivity(personagens);
+    }
 
 
 

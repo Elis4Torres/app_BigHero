@@ -147,6 +147,7 @@
         android:layout_marginTop="50dp"
         android:layout_marginBottom="250dp"
         android:backgroundTint="#488CB4"
+        android:onClick="Receitas"
         android:text="RECEITA"
         app:layout_constraintBottom_toTopOf="@+id/img_btn_home3"
         app:layout_constraintEnd_toEndOf="parent"
