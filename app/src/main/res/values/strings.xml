@@ -24,17 +24,45 @@
 
     ////////////////////////////
 
+    // Strings tela de personagens
     <string name="hiro">HIRO HAMADA</string>
     <string name="baymax">BAYMAX</string>
     <string name="fred">FRED</string>
     <string name="tomago">GOGO TOMAGO</string>
     <string name="wasabi">WASABI</string>
-    <string name="homey">HOMEY LEMON</string>
+    <string name="honey">HONEY LEMON</string>
     <string name="persongens">PERSONAGENS</string>
-    
-    
-    
-    
-    
+
+
+    //String tela Tomago
+    <string name="tomago_perso">GO GO TOMAGO</string>
+    <string name="tomago_descicao">Tudo fica mais divertido com os discos Maglev. Que funcionam como rodas de ultra velocidade e vão deixar qualquer um comendo poeira.</string>
+    <string name="desafio">Eai, vai encarar??</string>
+
+
+    //String tela Wasabi
+    <string name="wasabi_peso">WASABI</string>
+    <string name="wasabi_descricao">Superinteligente e um pouco obcecado por organização suas habilidades com um impressionante arsenal de lâminas de plasma.</string>
+    <string name="desafio_wasabi">Que tal um desafio?</string>
+
+    //String tela Hiro
+    <string name="hiro_perso">HIRO</string>
+    <string name="hiro_descricao">Gênio da robótica que cria uma grande invenção: os Microbôs. Micropartículas que juntas são capazes de reproduzir qualquer forma.</string>
+    <string name="microbos">Ache os microbôs!</string>
+
+    //String tela Baymax
+    <string name="baymax_perso">BAYMAX</string>
+    <string name="baymax_descricao">Criado para ser um atendente médico pessoal, Baymax é um robô, capaz de escanear uma pessoa, detectar e tratar seus níveis de stress, dor e humor. Mas Hiro acaba o tornando um herói.</string>
+    <string name="lanterna">Que tal ligar os foguetes?</string>
+
+    //String tela Fred
+    <string name="fred_perso">FRED</string>
+    <string name="fred_descricao">Apaixonado por quadrinhos e monstros, Fred se transforma em Fredzilla, um monstro de garras afiadas que cospe fogo e tem o poder de super salto.</string>
+    <string name="fantasia">Veste uma fantasia também!!</string>
+
+    //String tela Honey
+    <string name="honey_perso">HONEY</string>
+    <string name="honey_descricao">Honey Lemon é a especialista em química que cria misturas incríveis em formato de esferas. Quando lançadas podem livrar seus amigos de situações de risco.</string>
+
 
 </resources>

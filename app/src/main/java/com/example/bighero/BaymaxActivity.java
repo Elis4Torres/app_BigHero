@@ -3,18 +3,20 @@ package com.example.bighero;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.location.Location;
 import android.os.Bundle;
 import android.view.View;
 
-public class HomeActivity extends AppCompatActivity {
-
-    private View view;
+public class BaymaxActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_baymax);
+    }
+
+    public void Back(View view){
+        Intent voltar = new Intent(this, PersonagensActivity.class);
+        startActivity(voltar);
     }
 
     public void Home (View view){
@@ -22,20 +24,13 @@ public class HomeActivity extends AppCompatActivity {
         startActivity(home);
     }
 
-    public void Mais (View view){
+    public void Mais(View view){
         Intent mais = new Intent(this, MaisActivity.class);
         startActivity(mais);
     }
 
-    public void Trailer (View view){
-        Intent trailer = new Intent(this, TrailerActivity.class);
-        startActivity(trailer);
-    }
-    public void Personagem (View view){
+    public void Personagem(View view){
         Intent personagens = new Intent(this, PersonagensActivity.class);
         startActivity(personagens);
     }
-
-
-
 }

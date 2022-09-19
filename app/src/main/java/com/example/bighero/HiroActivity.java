@@ -6,24 +6,19 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class LocationActivity extends AppCompatActivity {
-
-    private View view;
+public class HiroActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_location);
+        setContentView(R.layout.activity_hiro);
     }
-    public void Back(View view){
-        Intent voltar = new Intent(this, HomeActivity.class);
-        startActivity(voltar);
 
+    public void Back(View view){
+        Intent voltar = new Intent(this, PersonagensActivity.class);
+        startActivity(voltar);
     }
-    public void Mapas(View view){
-        Intent local = new Intent(this, LocationActivity.class);
-        startActivity(local);
-    }
+
     public void Home (View view){
         Intent home = new Intent(this, HomeActivity.class);
         startActivity(home);
@@ -32,5 +27,10 @@ public class LocationActivity extends AppCompatActivity {
     public void Mais(View view){
         Intent mais = new Intent(this, MaisActivity.class);
         startActivity(mais);
+    }
+
+    public void Personagem(View view){
+        Intent personagens = new Intent(this, PersonagensActivity.class);
+        startActivity(personagens);
     }
 }

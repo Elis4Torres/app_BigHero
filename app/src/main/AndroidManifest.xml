@@ -16,6 +16,24 @@
         android:theme="@style/Theme.BigHero"
         tools:targetApi="31">
         <activity
+            android:name=".HoneyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FredActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BaymaxActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HiroActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WasabiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TomagoActivity"
+            android:exported="false" />
+        <activity
             android:name=".PersonagensActivity"
             android:exported="false" />
         <activity
@@ -23,9 +41,6 @@
             android:exported="false" />
         <activity
             android:name=".MaisActivity"
-            android:exported="false" />
-        <activity
-            android:name=".LocationActivity"
             android:exported="false" />
         <activity
             android:name=".HomeActivity"
