@@ -15,6 +15,8 @@ public class FredActivity extends AppCompatActivity {
         setContentView(R.layout.activity_fred);
     }
 
+    //Declarando funções dos botões
+
     public void Back(View view){
         Intent voltar = new Intent(this, PersonagensActivity.class);
         startActivity(voltar);
@@ -34,6 +36,8 @@ public class FredActivity extends AppCompatActivity {
         Intent personagens = new Intent(this, PersonagensActivity.class);
         startActivity(personagens);
     }
+
+    //Declarando intent implicita - Abrir link de site web
 
     public void Fantasia (View view) {
         Uri uri = Uri.parse("https://www.abrakadabra.com.br/");

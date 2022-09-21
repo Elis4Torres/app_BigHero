@@ -75,4 +75,7 @@
     <string name="botao_trailer">Assistir trailer</string>
     <string name="botao_critica">Ler crítica</string>
 
+    //String tela da lanterta
+    <string name="lanterna_on">Você ligou os foguetes!!</string>
+
 </resources>

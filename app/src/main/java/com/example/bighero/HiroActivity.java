@@ -18,6 +18,8 @@ public class HiroActivity extends AppCompatActivity {
         setContentView(R.layout.activity_hiro);
     }
 
+    //Declarando funções dos botões
+
     public void Back(View view){
         Intent voltar = new Intent(this, PersonagensActivity.class);
         startActivity(voltar);
@@ -37,6 +39,8 @@ public class HiroActivity extends AppCompatActivity {
         Intent personagens = new Intent(this, PersonagensActivity.class);
         startActivity(personagens);
     }
+
+    //Declarando intent implicita - Abrir Gmail e mandar mensagem de e-mail padrão
 
     public void Email(View view) throws UnsupportedEncodingException {
 

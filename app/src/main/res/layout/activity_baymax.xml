@@ -134,7 +134,7 @@
         android:layout_marginBottom="80dp"
         android:backgroundTint="#BE1C1A"
         android:enabled="false"
-        android:text="AGITE O CELULAR"
+        android:text="APROXIME DO SENSOR"
         android:textColor="#fff"
         android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="parent"

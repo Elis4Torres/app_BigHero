@@ -14,10 +14,13 @@ public class PersonagensActivity extends AppCompatActivity {
         setContentView(R.layout.activity_personagens);
     }
 
+    //Declarando funções dos botões
+
     public void Back(View view){
         Intent voltar = new Intent(this, HomeActivity.class);
         startActivity(voltar);
     }
+
     public void Home (View view){
         Intent home = new Intent(this, HomeActivity.class);
         startActivity(home);

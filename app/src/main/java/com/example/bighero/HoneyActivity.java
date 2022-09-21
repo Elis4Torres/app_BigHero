@@ -14,10 +14,14 @@ public class HoneyActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_honey);
     }
-    public void Back(View view){
+
+    //Declarando funções dos botões
+
+    public void Back(View view) {
         Intent voltar = new Intent(this, PersonagensActivity.class);
         startActivity(voltar);
     }
+
     public void Home (View view){
         Intent home = new Intent(this, HomeActivity.class);
         startActivity(home);
@@ -32,6 +36,8 @@ public class HoneyActivity extends AppCompatActivity {
         Intent personagens = new Intent(this, PersonagensActivity.class);
         startActivity(personagens);
     }
+
+    //Declarando intent implicita - Pesquisa na web
 
     public void Sobre (View view){
         Intent sobre = new Intent(Intent.ACTION_WEB_SEARCH);

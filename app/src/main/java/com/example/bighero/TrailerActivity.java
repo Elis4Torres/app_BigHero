@@ -22,6 +22,8 @@ public class TrailerActivity extends AppCompatActivity {
 
     }
 
+    //Declarando funções dos botões
+
     public void Back(View view) {
         Intent voltar = new Intent(this, HomeActivity.class);
         startActivity(voltar);
@@ -42,11 +44,15 @@ public class TrailerActivity extends AppCompatActivity {
         startActivity(personagens);
     }
 
+    //Declarando intent implicita - Abrir site web
+
     public void Video (View view) {
         Uri uri = Uri.parse("https://www.youtube.com/watch?v=Zx3xEc6-mU4");
         Intent video = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=Zx3xEc6-mU4"));
         startActivity(video);
     }
+
+    //Declarando intent implicita - Abrir site web
 
     public void Ler (View view) {
         Uri uri = Uri.parse("https://www.rottentomatoes.com/m/big_hero_6");

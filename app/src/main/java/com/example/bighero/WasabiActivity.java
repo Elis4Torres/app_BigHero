@@ -14,10 +14,14 @@ public class WasabiActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wasabi);
     }
+
+    //Declarando funções dos botões
+
     public void Back(View view){
         Intent voltar = new Intent(this, PersonagensActivity.class);
         startActivity(voltar);
     }
+
     public void Home (View view){
         Intent home = new Intent(this, HomeActivity.class);
         startActivity(home);
@@ -32,6 +36,9 @@ public class WasabiActivity extends AppCompatActivity {
         Intent personagens = new Intent(this, PersonagensActivity.class);
         startActivity(personagens);
     }
+
+    //Declarando intent implicita - Abrir site web
+
     public void Receitas (View view) {
         Uri uri = Uri.parse("https://www.receitasnestle.com.br/receitas/ratatouille-legumes-assados");
         Intent receitas = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.receitasnestle.com.br/receitas/ratatouille-legumes-assados"));

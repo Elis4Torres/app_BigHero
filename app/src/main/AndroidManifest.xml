@@ -3,11 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.bighero">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    //Declarando permissões de internet e localização
 
-    <uses-feature android:name="android.hardware.sensor.proximity"
-        android:required="true"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+
+    //Declarando sensor
+
+    <uses-feature
+        android:name="android.hardware.sensor.proximity"
+        android:required="true" />
 
     <application
         android:allowBackup="true"

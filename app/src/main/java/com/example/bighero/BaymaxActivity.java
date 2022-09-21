@@ -34,6 +34,7 @@ public class BaymaxActivity extends AppCompatActivity {
     boolean laterna_bool = false;
     CameraManager sensorManagerLaterna;
 
+// Declarando código para ativação da lanterna através do sensor de proximidade
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,6 +77,8 @@ public class BaymaxActivity extends AppCompatActivity {
         super.onPause();
         sensorManager.unregisterListener(sensorAproximidadeListener);
     }
+
+    //Declarando funções dos botões
 
     public void Back(View view){
         Intent voltar = new Intent(this, PersonagensActivity.class);

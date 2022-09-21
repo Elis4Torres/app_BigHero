@@ -14,7 +14,6 @@ public class MainActivity extends AppCompatActivity {
     TextView textView;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
         progressAnimation();
 
     }
+
+    //Declarando duração da barra de progresso
 
     public void progressAnimation(){
         ProgressBarAnimation anim = new ProgressBarAnimation(this, progressBar, textView, 0f, 100f);

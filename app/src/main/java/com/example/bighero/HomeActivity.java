@@ -16,6 +16,8 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
     }
 
+    //Declarando funções dos botões
+
     public void Home (View view){
         Intent home = new Intent(this, HomeActivity.class);
         startActivity(home);

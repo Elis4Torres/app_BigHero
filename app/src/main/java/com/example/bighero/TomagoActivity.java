@@ -32,6 +32,8 @@ public class TomagoActivity extends AppCompatActivity {
         getLocation();
     }
 
+    //Declarando funções dos botões
+
     public void Back(View view){
         Intent voltar = new Intent(this, PersonagensActivity.class);
         startActivity(voltar);
@@ -51,6 +53,8 @@ public class TomagoActivity extends AppCompatActivity {
         Intent personagens = new Intent(this, PersonagensActivity.class);
         startActivity(personagens);
     }
+
+    //Declarando permissão de localização
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
@@ -79,6 +83,8 @@ public class TomagoActivity extends AppCompatActivity {
         ActivityCompat.requestPermissions(this,
                 new String[]{Manifest.permission.ACCESS_COARSE_LOCATION}, 10);
     }
+
+    //Declarando localização que vai ser chamada no maps
 
     public void verMapa(View view)
     {
