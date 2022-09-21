@@ -48,7 +48,7 @@
     //String tela Hiro
     <string name="hiro_perso">HIRO</string>
     <string name="hiro_descricao">Gênio da robótica que cria uma grande invenção: os Microbôs. Micropartículas que juntas são capazes de reproduzir qualquer forma.</string>
-    <string name="microbos">Ache os microbôs!</string>
+
 
     //String tela Baymax
     <string name="baymax_perso">BAYMAX</string>
@@ -64,5 +64,15 @@
     <string name="honey_perso">HONEY</string>
     <string name="honey_descricao">Honey Lemon é a especialista em química que cria misturas incríveis em formato de esferas. Quando lançadas podem livrar seus amigos de situações de risco.</string>
 
+    //String tela home
+    <string name="home_descricao">Quando a situação sai do controle e um vilão começa a destruir a cidade, um grupo de amigos se juntam e colocam suas habilidades em prática para tentar salvar a cidade.</string>
+    <string name="herois">Conheça os heróis</string>
+    <string name="big_hero">OPERAÇÃO BIG HERO</string>
+
+    //String tela trailer
+    <string name="trailer">TRAILER</string>
+    <string name="trailer_descricao">Que tal conhecer um pouco mais da nossa aventura?</string>
+    <string name="botao_trailer">Assistir trailer</string>
+    <string name="botao_critica">Ler crítica</string>
 
 </resources>

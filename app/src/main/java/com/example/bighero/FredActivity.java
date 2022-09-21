@@ -25,9 +25,9 @@ public class FredActivity extends AppCompatActivity {
         startActivity(home);
     }
 
-    public void Mais(View view){
-        Intent mais = new Intent(this, MaisActivity.class);
-        startActivity(mais);
+    public void Trailer (View view){
+        Intent trailer = new Intent(this, TrailerActivity.class);
+        startActivity(trailer);
     }
 
     public void Personagem(View view){

@@ -18,23 +18,39 @@ public class TrailerActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView (R.layout.activity_trailer);
-
-        VideoView video;
-        video = (VideoView) findViewById(R.id.videoView2);
-        String path = "android.resource://" + getPackageName() + "/" + R.raw.trailer;
-        video.setVideoURI(Uri.parse(path));
-        //video.start();
-
-        MediaController mediaController = new MediaController(this);
-        video.setMediaController(mediaController);
-        mediaController.setAnchorView(video);
+        setContentView(R.layout.activity_trailer);
 
     }
 
-    public void Back(View view){
+    public void Back(View view) {
         Intent voltar = new Intent(this, HomeActivity.class);
         startActivity(voltar);
+    }
 
+    public void Home (View view){
+        Intent home = new Intent(this, HomeActivity.class);
+        startActivity(home);
+    }
+
+    public void Trailer (View view){
+        Intent trailer = new Intent(this, TrailerActivity.class);
+        startActivity(trailer);
+    }
+
+    public void Personagem (View view){
+        Intent personagens = new Intent(this, PersonagensActivity.class);
+        startActivity(personagens);
+    }
+
+    public void Video (View view) {
+        Uri uri = Uri.parse("https://www.youtube.com/watch?v=Zx3xEc6-mU4");
+        Intent video = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=Zx3xEc6-mU4"));
+        startActivity(video);
+    }
+
+    public void Ler (View view) {
+        Uri uri = Uri.parse("https://www.rottentomatoes.com/m/big_hero_6");
+        Intent ler = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.rottentomatoes.com/m/big_hero_6"));
+        startActivity(ler);
     }
 }

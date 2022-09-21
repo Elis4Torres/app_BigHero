@@ -6,6 +6,80 @@
     android:layout_height="match_parent"
     tools:context=".TrailerActivity">
 
+    <ImageButton
+        android:id="@+id/img_btn_home9"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="580dp"
+        android:backgroundTint="#fff"
+        android:onClick="Home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_home" />
+
+    <ImageButton
+        android:id="@+id/img_btn_persons8"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="580dp"
+        android:layout_marginEnd="280dp"
+        android:backgroundTint="#fff"
+        android:onClick="Personagem"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_person" />
+
+    <ImageButton
+        android:id="@+id/img_home_mais3"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="580dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#fff"
+        android:onClick="Trailer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_add" />
+
+    <ImageButton
+        android:id="@+id/img_btn_voltar8"
+        android:layout_width="68dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginBottom="35dp"
+        android:backgroundTint="#fff"
+        android:onClick="Back"
+        app:layout_constraintBottom_toTopOf="@+id/view_hiro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_arrow_back" />
+
+    <TextView
+        android:id="@+id/txt_personegens2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/trailer"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <FrameLayout
         android:id="@+id/controllerAnchor"
         android:layout_width="wrap_content"
@@ -13,102 +87,88 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"/>
 
-        <VideoView
-            android:id="@+id/videoView2"
-            android:layout_width="413dp"
-            android:layout_height="213dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
-
-    </FrameLayout>
-
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar2"
-        android:layout_width="368dp"
-        android:layout_height="60dp"
-        android:background="@color/white"
-        android:backgroundTint="#E8BDBD"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="381dp"
+        android:layout_height="309dp"
+        android:layout_marginTop="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="43dp" />
+        app:srcCompat="@drawable/personagens" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="258dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginBottom="130dp"
+        android:text="@string/trailer_descricao"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_personegens2" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="9dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="9dp"
-        android:layout_marginBottom="16dp"
-        android:text="@string/resumo_trailer"
-        android:textColor="#C0535353"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="430dp"
+        android:text="@string/botao_trailer"
         android:textSize="18dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/controllerAnchor"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="198dp"
-        android:layout_height="183dp"
-        android:layout_marginStart="250dp"
-        android:layout_marginTop="150dp"
-        android:layout_marginBottom="66dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/controllerAnchor"
-        app:layout_constraintVertical_bias="0.513"
-        app:srcCompat="@drawable/hero_trailer" />
-
-    <ImageButton
-        android:id="@+id/img_btn_back"
-        android:layout_width="111dp"
-        android:layout_height="69dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="-30dp"
-        android:layout_marginBottom="3dp"
-        android:backgroundTint="#E8BDBD"
-        android:onClick="Back"
-        app:layout_constraintBottom_toTopOf="@+id/textView5"
-        app:layout_constraintEnd_toStartOf="@+id/toolbar2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_arrow_back" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="42dp"
-        android:layout_marginEnd="100dp"
-        android:text="@string/spoiler"
-        android:textColor="#E8BDBD"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/imageView4"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="150dp"
+        android:layout_marginBottom="430dp"
+        android:text="@string/botao_critica"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/controllerAnchor" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="309dp"
-        android:layout_height="467dp"
-        android:layout_marginTop="130dp"
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="150dp"
+        android:layout_marginBottom="350dp"
+        android:backgroundTint="#B61024"
+        android:onClick="Video"
+        android:text="ASSISTIR"
+        android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/controllerAnchor"
-        app:srcCompat="@drawable/baymax_corte" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginBottom="350dp"
+        android:backgroundTint="#B61024"
+        android:onClick="Ler"
+        android:text="LER"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

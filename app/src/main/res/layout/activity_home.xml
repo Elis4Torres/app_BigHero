@@ -7,147 +7,102 @@
     tools:context=".HomeActivity">
 
     <ImageButton
-        android:id="@+id/img_btn_home"
-        android:layout_width="125dp"
-        android:layout_height="72dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="-20dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginBottom="20dp"
-        android:background="#00FFFFFF"
+        android:id="@+id/img_btn_home8"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="580dp"
+        android:backgroundTint="#fff"
         android:onClick="Home"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/img_btn_mais"
-        app:layout_constraintStart_toEndOf="@+id/img_btn_location"
-        app:layout_constraintTop_toBottomOf="@+id/imgHero"
-        app:srcCompat="@drawable/ic_home_rose"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_home" />
 
     <ImageButton
-        android:id="@+id/img_btn_location"
-        android:layout_width="125dp"
-        android:layout_height="72dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginBottom="50dp"
-        android:background="#00FFFFFF"
-        android:onClick="Mapas"
+        android:id="@+id/img_btn_persons7"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="580dp"
+        android:layout_marginEnd="280dp"
+        android:backgroundTint="#fff"
+        android:onClick="Personagem"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/img_btn_home"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_trailer"
-        app:srcCompat="@drawable/ic_location"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_person" />
 
     <ImageButton
-        android:id="@+id/img_btn_mais"
-        android:layout_width="125dp"
-        android:layout_height="72dp"
-        android:layout_marginTop="-20dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginBottom="20dp"
-        android:background="#00FFFFFF"
-        android:onClick="Mais"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/img_btn_home"
-        app:layout_constraintTop_toBottomOf="@+id/imgHero"
-        app:srcCompat="@drawable/ic_add"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <ImageView
-        android:id="@+id/imgHero"
-        android:layout_width="210dp"
-        android:layout_height="381dp"
-        android:layout_marginStart="200dp"
-        android:layout_marginTop="180dp"
-        android:layout_marginEnd="-20dp"
-        android:layout_marginBottom="100dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.377"
-        app:srcCompat="@drawable/hero2" />
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="88dp"
-        android:background="@color/white"
-        android:backgroundTint="#E8BDBD"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="-50dp"
-        android:layout_marginEnd="80dp"
-        android:layout_marginBottom="200dp"
-        android:text="@string/apresentacao"
-        android:textColor="#E8BDBD"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/imgHero"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="-50dp"
-        android:text="@string/resumo"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/imgHero"
-        app:layout_constraintHorizontal_bias="0.51"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
-
-    <Button
-        android:id="@+id/btn_trailer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginBottom="160dp"
-        android:backgroundTint="#E8BDBD"
+        android:id="@+id/img_home_mais2"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="580dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#fff"
         android:onClick="Trailer"
-        android:text="ASSISTIR"
-        android:textSize="18dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/img_btn_home"
-        app:layout_constraintEnd_toStartOf="@+id/imgHero"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_add" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="#B61024"
         android:onClick="Personagem"
         android:text="Persongens"
-        app:layout_constraintBottom_toTopOf="@+id/img_btn_location"
-        app:layout_constraintEnd_toStartOf="@+id/imgHero"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_trailer" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="308dp"
+        android:layout_height="131dp"
+        android:layout_marginTop="120dp"
+        android:text="@string/home_descricao"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="359dp"
+        android:layout_height="239dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.541"
+        app:srcCompat="@drawable/herois" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/big_hero"
+        android:textColor="#B61024"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
