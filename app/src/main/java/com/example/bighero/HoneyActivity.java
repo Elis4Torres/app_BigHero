@@ -2,6 +2,7 @@ package com.example.bighero;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.SearchManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -30,5 +31,12 @@ public class HoneyActivity extends AppCompatActivity {
     public void Personagem(View view){
         Intent personagens = new Intent(this, PersonagensActivity.class);
         startActivity(personagens);
+    }
+
+    public void Sobre (View view){
+        Intent sobre = new Intent(Intent.ACTION_WEB_SEARCH);
+        String query = "operação big hero Honey Lemon";
+        sobre.putExtra(SearchManager.QUERY, query);
+        startActivity(sobre);
     }
 }

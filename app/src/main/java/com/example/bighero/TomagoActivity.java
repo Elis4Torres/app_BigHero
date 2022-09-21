@@ -8,6 +8,7 @@ import android.Manifest;
 import android.app.SearchManager;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -79,11 +80,14 @@ public class TomagoActivity extends AppCompatActivity {
                 new String[]{Manifest.permission.ACCESS_COARSE_LOCATION}, 10);
     }
 
-    public void Localização (View view){
-        Intent intent = new Intent(Intent.ACTION_WEB_SEARCH);
-        String query = "Parque Villa Lobos";
-        intent.putExtra(SearchManager.QUERY, query);
-        startActivity(intent);
+    public void verMapa(View view)
+    {
+        //coordenadas, onde geo:latitude,longitude; z = o nível de zoom
+        Uri location = Uri.parse("geo:-23.5463038,-46.729603,17z");
+        Intent mapIntent = new Intent(Intent.ACTION_VIEW, location);
+        startActivity(mapIntent);
+
     }
+
 
 }

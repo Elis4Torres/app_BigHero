@@ -97,7 +97,7 @@
         android:id="@+id/textView9"
         android:layout_width="297dp"
         android:layout_height="113dp"
-        android:layout_marginBottom="250dp"
+        android:layout_marginBottom="300dp"
         android:text="@string/hiro_descricao"
         android:textSize="18dp"
         android:textStyle="bold"
@@ -110,13 +110,38 @@
 
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="273dp"
-        android:layout_height="325dp"
-        android:layout_marginTop="200dp"
+        android:layout_width="212dp"
+        android:layout_height="227dp"
+        android:layout_marginTop="250dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/herois_hiro" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Email"
+        android:text="ENVIAR MENSAGEM"
+        app:layout_constraintBottom_toTopOf="@+id/imageView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="210dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/mensagem"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -37,7 +37,7 @@
     //String tela Tomago
     <string name="tomago_perso">GO GO TOMAGO</string>
     <string name="tomago_descicao">Tudo fica mais divertido com os discos Maglev. Que funcionam como rodas de ultra velocidade e vão deixar qualquer um comendo poeira.</string>
-    <string name="desafio">Eai, vai encarar??</string>
+    <string name="desafio">Esse é um bom lugar pra correr</string>
 
 
     //String tela Wasabi
@@ -48,7 +48,7 @@
     //String tela Hiro
     <string name="hiro_perso">HIRO</string>
     <string name="hiro_descricao">Gênio da robótica que cria uma grande invenção: os Microbôs. Micropartículas que juntas são capazes de reproduzir qualquer forma.</string>
-
+    <string name="mensagem">Me envie uma mensagem</string>
 
     //String tela Baymax
     <string name="baymax_perso">BAYMAX</string>

@@ -145,7 +145,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="70dp"
         android:backgroundTint="#FFCE4A"
-        android:onClick="Localização"
+        android:onClick="verMapa"
         android:text="CORRER"
         android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="parent"

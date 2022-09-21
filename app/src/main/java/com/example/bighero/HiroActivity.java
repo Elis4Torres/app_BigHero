@@ -3,8 +3,12 @@ package com.example.bighero;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 
 public class HiroActivity extends AppCompatActivity {
 
@@ -32,5 +36,22 @@ public class HiroActivity extends AppCompatActivity {
     public void Personagem(View view){
         Intent personagens = new Intent(this, PersonagensActivity.class);
         startActivity(personagens);
+    }
+
+    public void Email(View view) throws UnsupportedEncodingException {
+
+        //formata o conteúdo do email
+        String uriText =
+                "mailto:alveselis89@gmail.com" +
+                        "?subject=" + URLEncoder.encode("Precisamosﾠdeﾠajuda!", "utf-8") +
+                        "&body=" + URLEncoder.encode("Minhaﾠcidadeﾠprecisaﾠdeﾠvocês.ﾠDigiteﾠsuaﾠcidade:ㅤ", "utf-8");
+        Uri uri = Uri.parse(uriText);
+        //inicia a Intent
+        Intent email = new Intent(Intent.ACTION_SENDTO);
+        //Define o conteúdo
+        email.setData(uri);
+        //Inicia a activity para enviar o email
+        startActivity(email);
+
     }
 }

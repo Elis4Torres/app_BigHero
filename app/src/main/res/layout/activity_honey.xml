@@ -110,13 +110,28 @@
 
     <ImageView
         android:id="@+id/imageView11"
-        android:layout_width="184dp"
-        android:layout_height="307dp"
+        android:layout_width="168dp"
+        android:layout_height="266dp"
         android:layout_marginTop="200dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/herois_honey" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#E12CC1 "
+        android:onClick="Sobre"
+        android:text="MAIS SOBRE"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
