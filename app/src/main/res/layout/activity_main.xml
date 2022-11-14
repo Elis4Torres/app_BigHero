@@ -7,7 +7,7 @@
     android:padding="16dp"
     tools:context=".MainActivity">
 
-//Declarando e configurando views da tela de carregamento
+<!--Declarando e configurando views da tela de carregamento-->
 
     <TextView
         android:layout_width="wrap_content"
@@ -27,7 +27,7 @@
         android:layout_width="250dp"
         android:layout_height="3dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginLeft="40dp"
+        android:layout_centerHorizontal="true"
         android:layout_marginBottom="45dp" />
 
 
