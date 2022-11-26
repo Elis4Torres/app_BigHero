@@ -78,10 +78,12 @@
     //String tela da lanterta
     <string name="lanterna_on">Você ligou os foguetes!!</string>
 
-    <!--Strings tela cadastro-->
+    <!--Strings tela cadastro e login-->
     <string name="cadastro_nome">Nome</string>
     <string name="cadastro_email">Email</string>
     <string name="cadastro_senha">Senha</string>
     <string name="cadastro_btn">Cadastrar</string>
+    <string name="login_btn">Login</string>
+    <string name="rememberme_btn">Lembrar login</string>
 
 </resources>

@@ -1,9 +1,14 @@
 package com.example.bighero;
 
+import static androidx.core.content.ContextCompat.startActivity;
+
 import android.content.ContentValues;
 import android.content.Context;
+import android.content.Intent;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -41,7 +46,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    void Cadastrar(String user_name, String user_email, String user_password) {
+    public boolean Cadastrar(String user_name, String user_email, String user_password) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
 
@@ -52,11 +57,33 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         long resultInsert = db.insert(USER_TABLE_NAME, null, cv);
 
         if (resultInsert == -1){
-            Toast.makeText(context, "Falha ao cadastrar.", Toast.LENGTH_SHORT).show();
+            return false;
         } else {
-            Toast.makeText(context, "Cadastro realizado com sucesso!", Toast.LENGTH_SHORT).show();
+            return true;
         }
 
         // NECESSÁRIO VALIDAR O CADASTRO PARA GARANTIR A NÃO-DUPLICIDADE
     }
+
+
+    public boolean checkemail(String user_email){
+        SQLiteDatabase myDb = this.getWritableDatabase();
+        Cursor cursor = myDb.rawQuery("SELECT * FROM " + USER_TABLE_NAME + " WHERE email = ?", new String[] {user_email});
+        if(cursor.getCount() > 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public boolean checkpassword(String user_email, String user_senha) {
+        SQLiteDatabase myDb = this.getWritableDatabase();
+        Cursor cursor = myDb.rawQuery("SELECT * FROM " + USER_TABLE_NAME + " WHERE email = ? and senha = ?", new String[] {user_email, user_senha});
+        if(cursor.getCount() > 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
 }

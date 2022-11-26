@@ -35,7 +35,7 @@ public class ProgressBarAnimation extends Animation {
         textView.setText((int)value+" ");
 
         if(value == to) {
-            context.startActivities(new Intent[]{new Intent(context, HomeActivity.class)});
+            context.startActivities(new Intent[]{new Intent(context, LoginActivity.class)});
         }
     }
 }
