@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#2C2C2C"
     tools:context=".TrailerActivity">
 
     <ImageButton
@@ -11,7 +12,7 @@
         android:layout_width="120dp"
         android:layout_height="65dp"
         android:layout_marginTop="580dp"
-        android:backgroundTint="#fff"
+        android:backgroundTint="#2C2C2C"
         android:onClick="Home"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,7 +28,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="580dp"
         android:layout_marginEnd="280dp"
-        android:backgroundTint="#fff"
+        android:backgroundTint="#2C2C2C"
         android:onClick="Personagem"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,7 +44,7 @@
         android:layout_marginStart="280dp"
         android:layout_marginTop="580dp"
         android:layout_marginEnd="10dp"
-        android:backgroundTint="#fff"
+        android:backgroundTint="#2C2C2C"
         android:onClick="Trailer"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -59,7 +60,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginEnd="300dp"
         android:layout_marginBottom="35dp"
-        android:backgroundTint="#fff"
+        android:backgroundTint="#2C2C2C"
         android:onClick="Back"
         app:layout_constraintBottom_toTopOf="@+id/view_hiro"
         app:layout_constraintEnd_toEndOf="parent"
@@ -71,14 +72,14 @@
         android:id="@+id/txt_personegens2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginBottom="20dp"
-        android:text="@string/trailer"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="550dp"
+        android:text="MÍDIA"
         android:textAlignment="center"
-        android:textColor="#000"
+        android:textColor="#B61024"
         android:textSize="23dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintBottom_toTopOf="@+id/img_btn_home9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -92,86 +93,50 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="381dp"
-        android:layout_height="309dp"
-        android:layout_marginTop="250dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/personagens" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="258dp"
-        android:layout_height="57dp"
-        android:layout_marginStart="90dp"
-        android:layout_marginEnd="90dp"
-        android:layout_marginBottom="130dp"
-        android:text="@string/trailer_descricao"
-        android:textSize="18dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_personegens2" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="150dp"
-        android:layout_marginBottom="430dp"
-        android:text="@string/botao_trailer"
-        android:textSize="18dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="150dp"
-        android:layout_marginBottom="430dp"
-        android:text="@string/botao_critica"
-        android:textSize="18dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageView3"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
     <Button
         android:id="@+id/button8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="150dp"
-        android:layout_marginBottom="350dp"
+        android:layout_marginTop="150dp"
         android:backgroundTint="#B61024"
         android:onClick="Video"
-        android:text="ASSISTIR"
+        android:text="ASSISTIR AO TRAILER"
         android:textSize="18dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:icon="@drawable/ic_baseline_play_circle_outline_24"
+        app:layout_constraintBottom_toTopOf="@+id/img_btn_home9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_personegens2" />
 
     <Button
         android:id="@+id/button9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="150dp"
-        android:layout_marginBottom="350dp"
+        android:layout_marginTop="300dp"
         android:backgroundTint="#B61024"
         android:onClick="Ler"
-        android:text="LER"
+        android:text="LER A CRÍTICA"
         android:textSize="18dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:icon="@drawable/ic_book"
+        app:layout_constraintBottom_toTopOf="@+id/img_btn_home9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_personegens2" />
+
+    <Button
+        android:id="@+id/btn_midia"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:backgroundTint="#0000"
+        android:enabled="false"
+        android:text="@string/botao_midia"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_personegens2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

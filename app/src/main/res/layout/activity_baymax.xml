@@ -4,20 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#2C2C2C"
     tools:context=".BaymaxActivity">
 
-    <ImageView
-        android:id="@+id/img_baymax2"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="58dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView11"
+    <Button
+        android:id="@+id/btn_baymax2"
+        android:layout_width="350dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="480dp"
+        android:backgroundTint="#BE1C1A "
+        android:enabled="false"
+        android:paddingLeft="40sp"
+        android:paddingRight="55sp"
+        android:text="BAYMAX"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:icon="@drawable/ic_i_baymax"
+        app:iconPadding="10sp"
+        app:iconSize="65sp"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/img_btn_home5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/txt_wasabi3"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/baymax_icon" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/img_btn_voltar4"
@@ -25,37 +35,19 @@
         android:layout_height="50dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="300dp"
-        android:backgroundTint="#fff"
+        android:backgroundTint="#2C2C2C"
         android:onClick="Back"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_arrow_back" />
 
-    <TextView
-        android:id="@+id/txt_wasabi3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="79dp"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="79dp"
-        android:layout_marginBottom="60dp"
-        android:text="@string/baymax"
-        android:textAlignment="center"
-        android:textColor="#BE1C1A"
-        android:textSize="18dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView11"
-        app:layout_constraintEnd_toStartOf="@+id/img_baymax2"
-        app:layout_constraintStart_toEndOf="@+id/img_btn_voltar4"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ImageButton
         android:id="@+id/img_btn_home5"
         android:layout_width="120dp"
         android:layout_height="65dp"
         android:layout_marginTop="550dp"
-        android:backgroundTint="#fff"
+        android:backgroundTint="#2C2C2C"
         android:onClick="Home"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -71,7 +63,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="550dp"
         android:layout_marginEnd="280dp"
-        android:backgroundTint="#fff"
+        android:backgroundTint="#2C2C2C"
         android:onClick="Personagem"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -87,7 +79,7 @@
         android:layout_marginStart="280dp"
         android:layout_marginTop="550dp"
         android:layout_marginEnd="10dp"
-        android:backgroundTint="#fff"
+        android:backgroundTint="#2C2C2C"
         android:onClick="Personagem"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -96,66 +88,45 @@
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/ic_add" />
 
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="344dp"
-        android:layout_height="114dp"
-        android:layout_marginBottom="250dp"
-        android:text="@string/baymax_descricao"
-        android:textSize="19dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.609"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.431" />
-
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginBottom="100dp"
-        android:text="@string/lanterna"
-        android:textColor="#BE1C1A"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
         android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginBottom="80dp"
+        android:layout_marginTop="400dp"
         android:backgroundTint="#BE1C1A"
         android:enabled="false"
-        android:text="APROXIME DO SENSOR"
+        android:text="SE APROXIME DO SENSOR"
         android:textColor="#fff"
         android:textSize="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/img_btn_home5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_baymax2" />
 
     <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="259dp"
-        android:layout_height="276dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="285dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/imageView4"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/perfil_baymax"
+        app:layout_constraintBottom_toTopOf="@+id/btn_descBaymax"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.423"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/herois_baymax" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_baymax2" />
+
+    <Button
+        android:id="@+id/btn_descBaymax"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="300dp"
+        android:backgroundTint="#0000"
+        android:enabled="false"
+        android:text="@string/baymax_descricao"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_baymax2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

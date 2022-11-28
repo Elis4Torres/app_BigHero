@@ -37,28 +37,25 @@
     //String tela Tomago
     <string name="tomago_perso">GO GO TOMAGO</string>
     <string name="tomago_descicao">Tudo fica mais divertido com os discos Maglev. Que funcionam como rodas de ultra velocidade e vão deixar qualquer um comendo poeira.</string>
-    <string name="desafio">Esse é um bom lugar pra correr</string>
+
 
 
     //String tela Wasabi
     <string name="wasabi_peso">WASABI</string>
     <string name="wasabi_descricao">Superinteligente e um pouco obcecado por organização suas habilidades com um impressionante arsenal de lâminas de plasma.</string>
-    <string name="desafio_wasabi">Que tal um desafio?</string>
 
     //String tela Hiro
     <string name="hiro_perso">HIRO</string>
     <string name="hiro_descricao">Gênio da robótica que cria uma grande invenção: os Microbôs. Micropartículas que juntas são capazes de reproduzir qualquer forma.</string>
-    <string name="mensagem">Me envie uma mensagem</string>
 
     //String tela Baymax
     <string name="baymax_perso">BAYMAX</string>
     <string name="baymax_descricao">Criado para ser um atendente médico pessoal, Baymax é um robô, capaz de escanear uma pessoa, detectar e tratar seus níveis de stress, dor e humor. Mas Hiro acaba o tornando um herói.</string>
-    <string name="lanterna">Que tal ligar os foguetes?</string>
+
 
     //String tela Fred
     <string name="fred_perso">FRED</string>
     <string name="fred_descricao">Apaixonado por quadrinhos e monstros, Fred se transforma em Fredzilla, um monstro de garras afiadas que cospe fogo e tem o poder de super salto.</string>
-    <string name="fantasia">Veste uma fantasia também!!</string>
 
     //String tela Honey
     <string name="honey_perso">HONEY</string>
@@ -66,24 +63,20 @@
 
     //String tela home
     <string name="home_descricao">Quando a situação sai do controle e um vilão começa a destruir a cidade, um grupo de amigos se juntam e colocam suas habilidades em prática para tentar salvar a cidade.</string>
-    <string name="herois">Conheça os heróis</string>
     <string name="big_hero">OPERAÇÃO BIG HERO</string>
 
-    //String tela trailer
-    <string name="trailer">TRAILER</string>
-    <string name="trailer_descricao">Que tal conhecer um pouco mais da nossa aventura?</string>
+    //String tela Midia
+    <string name="botao_midia">Descubra mais sobre o filme VEJA O TRAILER E LEIA CRÍTICAS SOBRE O LONGA</string>
     <string name="botao_trailer">Assistir trailer</string>
     <string name="botao_critica">Ler crítica</string>
 
-    //String tela da lanterta
-    <string name="lanterna_on">Você ligou os foguetes!!</string>
 
     <!--Strings tela cadastro e login-->
     <string name="cadastro_nome">Nome</string>
     <string name="cadastro_email">Email</string>
     <string name="cadastro_senha">Senha</string>
     <string name="cadastro_btn">Cadastrar</string>
-    <string name="login_btn">Login</string>
+    <string name="login_btn">Entrar</string>
     <string name="rememberme_btn">Lembrar login</string>
 
 </resources>

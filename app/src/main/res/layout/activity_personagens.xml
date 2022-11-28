@@ -132,16 +132,17 @@
 
     <Button
         android:id="@+id/btn_hiro"
-        text
         android:layout_width="350dp"
         android:layout_height="90dp"
         android:backgroundTint="#593DA9 "
         android:onClick="Hiro"
         android:text="HIRO"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:icon="@drawable/ic_i_hero"
         app:iconPadding="10sp"
         app:iconSize="65sp"
+        app:iconTint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="@+id/view_hiro"
         app:layout_constraintEnd_toEndOf="@+id/view_hiro"
         app:layout_constraintStart_toStartOf="@+id/view_hiro"
