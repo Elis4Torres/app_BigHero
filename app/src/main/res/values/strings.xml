@@ -39,7 +39,6 @@
     <string name="tomago_descicao">Tudo fica mais divertido com os discos Maglev. Que funcionam como rodas de ultra velocidade e vão deixar qualquer um comendo poeira.</string>
 
 
-
     //String tela Wasabi
     <string name="wasabi_peso">WASABI</string>
     <string name="wasabi_descricao">Superinteligente e um pouco obcecado por organização suas habilidades com um impressionante arsenal de lâminas de plasma.</string>
@@ -78,5 +77,16 @@
     <string name="cadastro_btn">Cadastrar</string>
     <string name="login_btn">Entrar</string>
     <string name="rememberme_btn">Lembrar login</string>
+
+
+    <!--Strings tela perfil -->
+    <string name="perfil_nome">Nome</string>
+    <string name="perfil_status">Status</string>
+    <string name="perfil_email">Email</string>
+    <string name="perfil_senha">Senha</string>
+    <string name="perfil">PERFIL</string>
+
+
+
 
 </resources>

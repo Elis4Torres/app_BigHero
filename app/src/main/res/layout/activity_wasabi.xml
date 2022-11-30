@@ -41,7 +41,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_arrow_back" />
+        app:srcCompat="@drawable/ic_backwhite" />
 
     <ImageButton
         android:id="@+id/img_btn_home2"
@@ -55,7 +55,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/ic_home" />
+        app:srcCompat="@drawable/ic_homewhite" />
 
     <ImageButton
         android:id="@+id/img_btn_persons2"
@@ -65,13 +65,13 @@
         android:layout_marginTop="550dp"
         android:layout_marginEnd="280dp"
         android:backgroundTint="#2C2C2C"
-        android:onClick="Personagem"
+        android:onClick="Perfil"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.96"
-        app:srcCompat="@drawable/ic_person" />
+        app:srcCompat="@drawable/ic_personwhite" />
 
     <ImageButton
         android:id="@+id/img_btn_mais2"
@@ -87,7 +87,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/ic_add" />
+        app:srcCompat="@drawable/ic_addwhite" />
 
     <Button
         android:id="@+id/button3"

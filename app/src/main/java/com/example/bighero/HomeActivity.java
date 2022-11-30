@@ -28,7 +28,12 @@ public class HomeActivity extends AppCompatActivity {
         startActivity(trailer);
     }
 
-    public void Personagem (View view){
+    public void Perfil(View view){
+        Intent perfil = new Intent(this, PerfilActivity.class);
+        startActivity(perfil);
+    }
+
+    public void Personagens(View view){
         Intent personagens = new Intent(this, PersonagensActivity.class);
         startActivity(personagens);
     }

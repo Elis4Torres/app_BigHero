@@ -35,9 +35,9 @@ public class HiroActivity extends AppCompatActivity {
         startActivity(trailer);
     }
 
-    public void Personagem(View view){
-        Intent personagens = new Intent(this, PersonagensActivity.class);
-        startActivity(personagens);
+    public void Perfil(View view){
+        Intent perfil = new Intent(this, PerfilActivity.class);
+        startActivity(perfil);
     }
 
     //Declarando intent implicita - Abrir Gmail e mandar mensagem de e-mail padrão
