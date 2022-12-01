@@ -20,6 +20,7 @@
         android:text="HONEY"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
+        app:cornerRadius="15sp"
         app:icon="@drawable/ic_i_honey"
         app:iconPadding="10sp"
         app:iconSize="70sp"

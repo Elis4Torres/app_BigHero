@@ -31,68 +31,87 @@
         android:id="@+id/imageView3"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        app:srcCompat="@drawable/perfil_hiro"
-        tools:layout_editor_absoluteX="105dp"
-        tools:layout_editor_absoluteY="121dp" />
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="49dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtview_nome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/perfil_hiro" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="73dp"
         android:layout_height="24dp"
+        android:layout_marginTop="60dp"
         android:text="@string/perfil"
         android:textColor="#C81920"
         android:textSize="23sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="169dp"
-        tools:layout_editor_absoluteY="53dp" />
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn_sair"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
         android:backgroundTint="#C81920"
         android:text="SAIR"
         android:textSize="16sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="162dp"
-        tools:layout_editor_absoluteY="642dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
         android:id="@+id/txtview_nome"
         android:layout_width="199dp"
         android:layout_height="44dp"
+        android:layout_marginBottom="10dp"
         android:background="#FFFFFF"
         android:padding="8dp"
-        android:text="NOME"
+        android:text="Nome"
         android:textAlignment="viewStart"
         android:textColor="#5E5E5E"
         android:textSize="19sp"
-        tools:layout_editor_absoluteX="105dp"
-        tools:layout_editor_absoluteY="370dp" />
+        app:layout_constraintBottom_toTopOf="@+id/txtview_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <TextView
         android:id="@+id/txtview_email"
         android:layout_width="199dp"
         android:layout_height="44dp"
+        android:layout_marginBottom="10dp"
         android:background="#FFFFFF"
         android:padding="8dp"
         android:text="Email"
         android:textAlignment="viewStart"
         android:textColor="#5E5E5E"
         android:textSize="19sp"
-        tools:layout_editor_absoluteX="105dp"
-        tools:layout_editor_absoluteY="435dp" />
+        app:layout_constraintBottom_toTopOf="@+id/txtview_senha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtview_nome" />
 
     <TextView
         android:id="@+id/txtview_senha"
         android:layout_width="199dp"
         android:layout_height="44dp"
+        android:layout_marginBottom="99dp"
         android:background="#FFFFFF"
         android:padding="8dp"
         android:text="Senha"
         android:textAlignment="viewStart"
         android:textColor="#5E5E5E"
         android:textSize="19sp"
-        tools:layout_editor_absoluteX="106dp"
-        tools:layout_editor_absoluteY="499dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btn_sair"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtview_email" />
 </androidx.constraintlayout.widget.ConstraintLayout>

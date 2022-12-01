@@ -12,7 +12,8 @@ import android.widget.TextView;
 
 public class PerfilActivity extends AppCompatActivity {
 
-    TextView nome, email ,senha;
+    TextView nome ,senha;
+    public static TextView email;
     Button btnsair, btnvoltar;
     DatabaseHelper myDb;
 
@@ -30,20 +31,24 @@ public class PerfilActivity extends AppCompatActivity {
         myDb = new DatabaseHelper(this);
 
 
-//        void cursor = myDb.getdata('a');
-//        if (cursor.moveToFirst() ) {
-//            nome.setText(cursor.getString(cursor.getColumnIndex("nome");
-//        } else {
-//            nome.setText("Ooops no data extracted");
-//        }
-//        cursor.close();
-//    }
-
-    
-
+/*
+        cursor = myDb.getdata('a@gmail.com');
+            if (cursor.moveToFirst() ) {
+                nome.setText(cursor.getString(cursor.getColumnIndex("nome");
+            } else {
+                nome.setText("Ooops no data extracted");
+            }
+            cursor.close();
+        }
+*/
 
 //    public void Back(View view){
 //        Intent voltar = new Intent(this, HomeActivity.class);
 //        startActivity(voltar);
 //    }
+    }
+    public void Back(View view){
+        Intent voltar = new Intent(this, HomeActivity.class);
+        startActivity(voltar);
+    }
 }

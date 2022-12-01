@@ -19,7 +19,8 @@ import java.util.ArrayList;
 
 public class LoginActivity extends AppCompatActivity {
 
-    EditText txt_email ,txt_senha;
+    EditText txt_email;
+    EditText txt_senha;
     Button btn_login, btn_cadastrar;
     CheckBox remember;
     DatabaseHelper myDb;
@@ -90,6 +91,7 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         });
+
 
 
 

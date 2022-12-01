@@ -139,6 +139,7 @@
         android:text="HIRO"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
+        app:cornerRadius="15sp"
         app:icon="@drawable/ic_i_hero"
         app:iconPadding="10sp"
         app:iconSize="65sp"
@@ -156,6 +157,7 @@
         android:onClick="Baymax"
         android:text="BAYMAX"
         android:textSize="20sp"
+        app:cornerRadius="15sp"
         app:icon="@drawable/ic_i_baymax"
         app:iconPadding="10sp"
         app:iconSize="65sp"
@@ -172,6 +174,7 @@
         android:onClick="Fred"
         android:text="FRED"
         android:textSize="20sp"
+        app:cornerRadius="15sp"
         app:icon="@drawable/ic_i_fred"
         app:iconPadding="10sp"
         app:iconSize="75sp"
@@ -188,6 +191,7 @@
         android:onClick="Tomago"
         android:text="TOMAGO"
         android:textSize="20sp"
+        app:cornerRadius="15sp"
         app:icon="@drawable/ic_i_gogo"
         app:iconPadding="10sp"
         app:iconSize="75sp"
@@ -204,6 +208,7 @@
         android:onClick="Wasabi"
         android:text="WASABI"
         android:textSize="20sp"
+        app:cornerRadius="15sp"
         app:icon="@drawable/ic_i_wasabi"
         app:iconPadding="10sp"
         app:iconSize="75sp"
@@ -226,7 +231,8 @@
         app:layout_constraintBottom_toBottomOf="@id/view_homey"
         app:layout_constraintEnd_toEndOf="@id/view_homey"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/view_homey" />
+        app:layout_constraintTop_toTopOf="@id/view_homey"
+        app:cornerRadius="15sp" />
 
     <ImageButton
         android:id="@+id/img_btn_voltar"
