@@ -7,91 +7,6 @@
     android:background="#2C2C2C"
     tools:context=".PerfilActivity">
 
-    <EditText
-        android:id="@+id/txt_nome"
-        android:layout_width="247dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/custom_input"
-        android:backgroundTint="#F0F0F0"
-        android:ems="10"
-        android:hint="@string/perfil_nome"
-        android:inputType="textEmailAddress"
-        android:paddingStart="28dp"
-        android:shadowRadius="40"
-        android:textColor="#777777"
-        android:textColorHint="#777777"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/txt_status"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
-
-    <EditText
-        android:id="@+id/txt_status"
-        android:layout_width="247dp"
-        android:layout_height="44dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/custom_input"
-        android:backgroundTint="#F0F0F0"
-        android:ems="10"
-        android:hint="@string/perfil_status"
-        android:inputType="textEmailAddress"
-        android:paddingStart="28dp"
-        android:shadowRadius="40"
-        android:textColor="#777777"
-        android:textColorHint="#777777"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/txt_emailperfil"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_nome" />
-
-    <EditText
-        android:id="@+id/txt_emailperfil"
-        android:layout_width="247dp"
-        android:layout_height="44dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/custom_input"
-        android:backgroundTint="#F0F0F0"
-        android:ems="10"
-        android:hint="@string/perfil_email"
-        android:inputType="textEmailAddress"
-        android:paddingStart="28dp"
-        android:shadowRadius="40"
-        android:textColor="#777777"
-        android:textColorHint="#777777"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/txt_senhaperfil"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_status" />
-
-    <EditText
-        android:id="@+id/txt_senhaperfil"
-        android:layout_width="247dp"
-        android:layout_height="44dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/custom_input"
-        android:backgroundTint="#F0F0F0"
-        android:ems="10"
-        android:hint="@string/perfil_senha"
-        android:inputType="textEmailAddress"
-        android:paddingStart="28dp"
-        android:shadowRadius="40"
-        android:textColor="#777777"
-        android:textColorHint="#777777"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/btn_sair"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_emailperfil" />
-
     <Button
         android:id="@+id/btn_voltar2"
         android:layout_width="72dp"
@@ -116,40 +31,68 @@
         android:id="@+id/imageView3"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:layout_marginBottom="200dp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_sair"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/perfil_hiro" />
+        app:srcCompat="@drawable/perfil_hiro"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="121dp" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="73dp"
         android:layout_height="24dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="40dp"
         android:text="@string/perfil"
         android:textColor="#C81920"
         android:textSize="23sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/imageView3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteX="169dp"
+        tools:layout_editor_absoluteY="53dp" />
 
     <Button
         android:id="@+id/btn_sair"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="600dp"
         android:backgroundTint="#C81920"
         android:text="SAIR"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="642dp" />
+
+    <TextView
+        android:id="@+id/txtview_nome"
+        android:layout_width="199dp"
+        android:layout_height="44dp"
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        android:text="NOME"
+        android:textAlignment="viewStart"
+        android:textColor="#5E5E5E"
+        android:textSize="19sp"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="370dp" />
+
+    <TextView
+        android:id="@+id/txtview_email"
+        android:layout_width="199dp"
+        android:layout_height="44dp"
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        android:text="Email"
+        android:textAlignment="viewStart"
+        android:textColor="#5E5E5E"
+        android:textSize="19sp"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="435dp" />
+
+    <TextView
+        android:id="@+id/txtview_senha"
+        android:layout_width="199dp"
+        android:layout_height="44dp"
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        android:text="Senha"
+        android:textAlignment="viewStart"
+        android:textColor="#5E5E5E"
+        android:textSize="19sp"
+        tools:layout_editor_absoluteX="106dp"
+        tools:layout_editor_absoluteY="499dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
