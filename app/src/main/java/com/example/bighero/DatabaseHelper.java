@@ -1,15 +1,10 @@
 package com.example.bighero;
 
-import static androidx.core.content.ContextCompat.startActivity;
-
 import android.content.ContentValues;
 import android.content.Context;
-import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.view.View;
-import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
@@ -86,9 +81,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
     }
 
-    public void getdata(String user_email) {
-        SQLiteDatabase myDb = this.getWritableDatabase();
-        Cursor cursor = myDb.rawQuery("SELECT * FROM " + USER_TABLE_NAME + " WHERE email = ?", new String[] {user_email});
+    public Cursor getdata(String user_email) {
+        SQLiteDatabase myDb = this.getReadableDatabase();
+        Cursor cursor = myDb.rawQuery("SELECT * FROM " + USER_TABLE_NAME + " WHERE email = ?", new String[]{user_email});
+        return cursor;
     }
-
 }

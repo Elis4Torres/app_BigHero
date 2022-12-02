@@ -3,6 +3,7 @@ package com.example.bighero;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.net.wifi.hotspot2.pps.HomeSp;
 import android.os.Bundle;
 import android.view.View;
@@ -34,7 +35,17 @@ public class PerfilActivity extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             String user_email = extras.getString("my_variable");
-            email.setText(user_email);
+            Cursor cursor = myDb.getdata(user_email);
+            if (cursor.moveToFirst()) {
+                do {
+                    String nomedb = cursor.getString(1);
+                    String emaildb = cursor.getString(2);
+                    String senhadb = cursor.getString(3);
+                    nome.setText(nomedb);
+                    email.setText(emaildb);
+                    senha.setText(senhadb);
+                } while (cursor.moveToNext());
+            }
         }
     }
     public void Back(View view){
