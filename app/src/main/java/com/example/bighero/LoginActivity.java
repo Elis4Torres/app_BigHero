@@ -64,7 +64,9 @@ public class LoginActivity extends AppCompatActivity {
                     if(checkpassword == true) {
                         Toast.makeText(LoginActivity.this, "Login concluído.", Toast.LENGTH_SHORT).show();
                         Intent home = new Intent(LoginActivity.this, HomeActivity.class);
-                        startActivity(home);
+                        Intent i = new Intent(getApplicationContext(), PerfilActivity.class);
+                        i.putExtra("my_variable", email);
+                        startActivity(i);
                     } else {
                         Toast.makeText(LoginActivity.this, "Informações inválidas.", Toast.LENGTH_SHORT).show();
                     }

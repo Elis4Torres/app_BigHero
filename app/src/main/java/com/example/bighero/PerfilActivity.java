@@ -30,22 +30,12 @@ public class PerfilActivity extends AppCompatActivity {
         btnsair = findViewById(R.id.btn_sair);
         myDb = new DatabaseHelper(this);
 
-
-/*
-        cursor = myDb.getdata('a@gmail.com');
-            if (cursor.moveToFirst() ) {
-                nome.setText(cursor.getString(cursor.getColumnIndex("nome");
-            } else {
-                nome.setText("Ooops no data extracted");
-            }
-            cursor.close();
+        //Peguei o email
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            String user_email = extras.getString("my_variable");
+            email.setText(user_email);
         }
-*/
-
-//    public void Back(View view){
-//        Intent voltar = new Intent(this, HomeActivity.class);
-//        startActivity(voltar);
-//    }
     }
     public void Back(View view){
         Intent voltar = new Intent(this, HomeActivity.class);
