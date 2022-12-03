@@ -66,6 +66,8 @@ public class LoginActivity extends AppCompatActivity {
                         Intent home = new Intent(LoginActivity.this, HomeActivity.class);
                         Intent i = new Intent(getApplicationContext(), PerfilActivity.class);
                         i.putExtra("my_variable", email);
+                        txt_email.setText("");
+                        txt_senha.setText("");
                         startActivity(i);
                     } else {
                         Toast.makeText(LoginActivity.this, "Informações inválidas.", Toast.LENGTH_SHORT).show();
@@ -93,12 +95,7 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         });
-
-
-
-
     }
-
 
     public void Cadastro(View view){
         Intent cadastrar = new Intent(this, CadastroActivity.class);

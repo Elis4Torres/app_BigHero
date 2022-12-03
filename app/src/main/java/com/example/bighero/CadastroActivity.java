@@ -45,13 +45,17 @@ public class CadastroActivity extends AppCompatActivity {
                         Boolean checkemail = myDb.checkemail(email);
                         if(checkemail == false) {
                             Boolean insert = myDb.Cadastrar(nome, email, senha);
+                            txt_nome.setText("");
+                            txt_email.setText("");
+                            txt_senha.setText("");
+
                             if(insert==true) {
                                 Toast.makeText(CadastroActivity.this, "Usuário cadastrado.", Toast.LENGTH_SHORT).show();
                             } else {
                                 Toast.makeText(CadastroActivity.this, "Falha ao cadastrar usuário.", Toast.LENGTH_SHORT).show();
                             }
                         } else {
-                            Toast.makeText(CadastroActivity.this, "Usuário já existe.", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(CadastroActivity.this, "E-mail já cadastrado.", Toast.LENGTH_SHORT).show();
                         }
                     } else {
                         Toast.makeText(CadastroActivity.this, "Senha incorreta.", Toast.LENGTH_SHORT).show();
