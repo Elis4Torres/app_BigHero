@@ -45,7 +45,7 @@ public class LoginActivity extends AppCompatActivity {
         String checkbox = preferences.getString("remember", "");
 
         if(checkbox.equals("true")) {
-            Intent home = new Intent(LoginActivity.this, HomeActivity.class);
+            Intent home = new Intent(LoginActivity.this, PerfilActivity.class);
             startActivity(home);
         }else if (checkbox.equals("false")){
             Toast.makeText(LoginActivity.this, "Insira seus dados para entrar.", Toast.LENGTH_SHORT).show();
@@ -65,7 +65,7 @@ public class LoginActivity extends AppCompatActivity {
                         Toast.makeText(LoginActivity.this, "Login concluído.", Toast.LENGTH_SHORT).show();
                         Intent home = new Intent(LoginActivity.this, HomeActivity.class);
                         Intent i = new Intent(getApplicationContext(), PerfilActivity.class);
-                        i.putExtra("my_variable", email);
+                        i.putExtra("importedEmail", email);
                         txt_email.setText("");
                         txt_senha.setText("");
                         startActivity(i);

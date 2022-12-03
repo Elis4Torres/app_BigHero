@@ -57,7 +57,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             return true;
         }
 
-        // NECESSÁRIO VALIDAR O CADASTRO PARA GARANTIR A NÃO-DUPLICIDADE
     }
 
 
