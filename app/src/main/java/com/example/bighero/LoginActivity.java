@@ -67,6 +67,14 @@ public class LoginActivity extends AppCompatActivity {
                             editor.putString("senha", senha);
                             editor.putBoolean("checkbox", rememberme);
                             editor.commit();
+                        } else if (rememberme == false) {
+                            SharedPreferences lembrardemim = getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);
+                            SharedPreferences.Editor editor = lembrardemim.edit();
+
+                            editor.putString("email", "");
+                            editor.putString("senha", "");
+                            editor.putBoolean("checkbox", false);
+                            editor.commit();
                         }
                         Intent home = new Intent(LoginActivity.this, HomeActivity.class);
                         Intent i = new Intent(getApplicationContext(), PerfilActivity.class);
