@@ -44,6 +44,7 @@ public class PerfilActivity extends AppCompatActivity {
     String emaildb;
     String senhadb;
     String user_email;
+    String imagedb;
     String imgDecodableString;
 
 
@@ -76,7 +77,7 @@ public class PerfilActivity extends AppCompatActivity {
 
             //Peguei o email
             Bundle extras = getIntent().getExtras();
-        if(extras !=null) {
+            if(extras !=null) {
                 user_email = extras.getString("importedEmail");
                 Cursor cursor = myDb.getdata(user_email);
                 armazenar(extras.getString("importedEmail"));
@@ -85,9 +86,13 @@ public class PerfilActivity extends AppCompatActivity {
                         nomedb = cursor.getString(1);
                         emaildb = cursor.getString(2);
                         senhadb = cursor.getString(3);
+                        imagedb = cursor.getString(4);
                         nome.setText(nomedb);
                         email.setText(emaildb);
                         senha.setText(senhadb);
+                        if (imagedb != null) {
+                            imgview.setImageBitmap(BitmapFactory.decodeFile(imagedb));
+                        }
                     } while (cursor.moveToNext());
                 }
             }
@@ -103,6 +108,7 @@ public class PerfilActivity extends AppCompatActivity {
         nome = findViewById(R.id.txtview_nome);
         email = findViewById(R.id.txtview_email);
         senha = findViewById(R.id.txtview_senha);
+        imgview = findViewById(R.id.img_profile);
 
 
         Cursor cursor = myDb.getdata(user_email);
@@ -111,9 +117,14 @@ public class PerfilActivity extends AppCompatActivity {
                 nomedb = cursor.getString(1);
                 emaildb = cursor.getString(2);
                 senhadb = cursor.getString(3);
+                imagedb = cursor.getString(4);
                 nome.setText(nomedb);
                 email.setText(emaildb);
                 senha.setText(senhadb);
+                if (imagedb != null) {
+                    imgview.setImageBitmap(BitmapFactory.decodeFile(imagedb));
+                }
+
             } while (cursor.moveToNext());
         }
 
@@ -157,10 +168,10 @@ public class PerfilActivity extends AppCompatActivity {
 
                 int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
                 imgDecodableString = cursor.getString(columnIndex);
-                cursor.close();
-                // Setando a imagem na imageView
-                imgview.setImageBitmap(BitmapFactory.decodeFile(imgDecodableString));
 
+                cursor.close();
+                myDb.updateData(user_email, imgDecodableString);
+                imgview.setImageBitmap(BitmapFactory.decodeFile(imgDecodableString));
             } else {
                 Toast.makeText(this, "Você não escolheu uma imagem.", Toast.LENGTH_LONG).show();
             }

@@ -76,7 +76,6 @@ public class LoginActivity extends AppCompatActivity {
                             editor.putBoolean("checkbox", false);
                             editor.commit();
                         }
-                        Intent home = new Intent(LoginActivity.this, HomeActivity.class);
                         Intent i = new Intent(getApplicationContext(), PerfilActivity.class);
                         i.putExtra("importedEmail", email);
                         startActivity(i);

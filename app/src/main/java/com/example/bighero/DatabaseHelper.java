@@ -11,12 +11,13 @@ import androidx.annotation.Nullable;
 public class DatabaseHelper extends SQLiteOpenHelper {
     private final Context context;
     public static final String DATABASE_NAME = "bighero.db";
-    public static final int DATABASE_VERSION = 1;
+    public static final int DATABASE_VERSION = 2;
     public static final String USER_TABLE_NAME = "usuario";
     public static final String USER_COLUMN_ID = "_id";
     public static final String USER_COLUMN_NAME = "nome";
     public static final String USER_COLUMN_EMAIL = "email";
     public static final String USER_COLUMN_SENHA = "senha";
+    public static final String USER_COLUMN_IMAGE = "image";
 
     public DatabaseHelper(@Nullable Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -31,13 +32,14 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                         "( " + USER_COLUMN_ID + " integer primary key autoincrement," +
                         USER_COLUMN_NAME + " text , " +
                         USER_COLUMN_EMAIL + " text, " +
-                        USER_COLUMN_SENHA + " text)"
+                        USER_COLUMN_SENHA + " text, " +
+                        USER_COLUMN_IMAGE + " text)"
         );
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
-        db.execSQL("DROP TABLE IF EXISTS tbusuario");
+        db.execSQL("DROP TABLE IF EXISTS "+ USER_TABLE_NAME);
         onCreate(db);
     }
 
@@ -57,6 +59,21 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             return true;
         }
 
+    }
+
+    public boolean InsertImage(String user_image) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues cv = new ContentValues();
+
+        cv.put(USER_COLUMN_IMAGE, user_image);
+
+        long resultInsert = db.insert(USER_TABLE_NAME, null, cv);
+
+        if (resultInsert == -1){
+            return false;
+        } else {
+            return true;
+        }
     }
 
 
@@ -80,9 +97,32 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
     }
 
+    public boolean checkimg(String user_email) {
+        SQLiteDatabase myDb = this.getWritableDatabase();
+        Cursor cursor = myDb.rawQuery("SELECT " + USER_COLUMN_IMAGE + " FROM " + USER_TABLE_NAME + " WHERE EMAIL = ?", new String[] {user_email});
+        if(cursor.getCount() > 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     public Cursor getdata(String user_email) {
         SQLiteDatabase myDb = this.getReadableDatabase();
         Cursor cursor = myDb.rawQuery("SELECT * FROM " + USER_TABLE_NAME + " WHERE email = ?", new String[]{user_email});
         return cursor;
+    }
+
+    public void updateData(String user_email, String user_image) {
+
+        // Cursor cursor = myDb.rawQuery("update " + USER_TABLE_NAME + " SET " + USER_COLUMN_IMAGE + " = ?" + " where email = ?", new String[]{user_image, user_email});
+
+        SQLiteDatabase myDb = this.getWritableDatabase();
+        ContentValues cv = new ContentValues();
+
+        cv.put(USER_COLUMN_IMAGE, user_image);
+
+        myDb.update(USER_TABLE_NAME, cv, "email = ?", new String[]{user_email});
+        myDb.close();
     }
 }
