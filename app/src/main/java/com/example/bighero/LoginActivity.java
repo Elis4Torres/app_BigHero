@@ -26,6 +26,9 @@ public class LoginActivity extends AppCompatActivity {
     DatabaseHelper myDb;
     ArrayList<String> user_name, user_email, user_senha;
     public static final String SHARED_PREFS = "sharedPrefs";
+    public static String email;
+    public static String senha;
+    public static Boolean rememberme;
 
 
     @Override
@@ -41,21 +44,14 @@ public class LoginActivity extends AppCompatActivity {
         btn_login = findViewById(R.id.btn_login);
         myDb = new DatabaseHelper(this);
 
-        SharedPreferences preferences = getSharedPreferences("checkbox", MODE_PRIVATE);
-        String checkbox = preferences.getString("remember", "");
-
-        if(checkbox.equals("true")) {
-            Intent home = new Intent(LoginActivity.this, PerfilActivity.class);
-            startActivity(home);
-        }else if (checkbox.equals("false")){
-            Toast.makeText(LoginActivity.this, "Insira seus dados para entrar.", Toast.LENGTH_SHORT).show();
-        }
 
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String email = txt_email.getText().toString();
-                String senha = txt_senha.getText().toString();
+                email = txt_email.getText().toString();
+                senha = txt_senha.getText().toString();
+                rememberme = remember.isChecked();
+
 
                 if(email.equals("") || senha.equals("")) {
                     Toast.makeText(LoginActivity.this, "Preencha todos os campos.", Toast.LENGTH_SHORT).show();
@@ -63,11 +59,18 @@ public class LoginActivity extends AppCompatActivity {
                     Boolean checkpassword = myDb.checkpassword(email, senha);
                     if(checkpassword == true) {
                         Toast.makeText(LoginActivity.this, "Login concluído.", Toast.LENGTH_SHORT).show();
+                        if (rememberme == true) {
+                            SharedPreferences lembrardemim = getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);
+                            SharedPreferences.Editor editor = lembrardemim.edit();
+
+                            editor.putString("email", email);
+                            editor.putString("senha", senha);
+                            editor.putBoolean("checkbox", rememberme);
+                            editor.commit();
+                        }
                         Intent home = new Intent(LoginActivity.this, HomeActivity.class);
                         Intent i = new Intent(getApplicationContext(), PerfilActivity.class);
                         i.putExtra("importedEmail", email);
-                        txt_email.setText("");
-                        txt_senha.setText("");
                         startActivity(i);
                     } else {
                         Toast.makeText(LoginActivity.this, "Informações inválidas.", Toast.LENGTH_SHORT).show();
@@ -76,25 +79,22 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
+        loadData();
+        updateView();
 
-        remember.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if(compoundButton.isChecked()){
-                    SharedPreferences preferences = getSharedPreferences("ckeckbox", MODE_PRIVATE);
-                    SharedPreferences.Editor editor = preferences.edit();
-                    editor.putString("remember", "true");
-                    editor.apply();
-                    Toast.makeText(LoginActivity.this, "Checked", Toast.LENGTH_SHORT).show();
-                } else if (!compoundButton.isChecked()) {
-                    SharedPreferences preferences = getSharedPreferences("ckeckbox", MODE_PRIVATE);
-                    SharedPreferences.Editor editor = preferences.edit();
-                    editor.putString("remember", "false");
-                    editor.apply();
-                    Toast.makeText(LoginActivity.this, "Unchecked", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
+    }
+
+    public void loadData() {
+        SharedPreferences lembrardemim = getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);
+        email = lembrardemim.getString("email", null);
+        senha = lembrardemim.getString("senha", null);
+        rememberme = lembrardemim.getBoolean("checkbox", false);
+    }
+
+    public void updateView() {
+        txt_email.setText(email);
+        txt_senha.setText(senha);
+        remember.setChecked(rememberme);
     }
 
     public void Cadastro(View view){
